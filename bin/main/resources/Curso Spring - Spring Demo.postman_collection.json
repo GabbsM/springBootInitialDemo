@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "54fa5e2e-95bf-48d1-8292-e202a56a34da",
+		"name": "Curso Spring - Spring Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "RestCountries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.com/v3.1/all",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hello World",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{IP}}:{{Puerto}}/v1/hello/Gabriel",
+					"protocol": "http",
+					"host": [
+						"{{IP}}"
+					],
+					"port": "{{Puerto}}",
+					"path": [
+						"v1",
+						"hello",
+						"Gabriel"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

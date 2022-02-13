@@ -18,7 +18,17 @@ public class InitialController {
         this.userService = userService;
     }
 
-    @GetMapping("/test")
+    @GetMapping()
+    public String helloWorld(){
+        return "Hello World!";
+    }
+
+    @GetMapping("/hello/{user}")
+    public String helloUser(@PathVariable(name="user") String user){
+        return "Hello " + user + "!";
+    }
+
+    @GetMapping("/test/")
     public String helloGradle() {
         return "Hello Gradle!";
     }
